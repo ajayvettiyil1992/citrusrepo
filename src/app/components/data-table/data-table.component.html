@@ -1,0 +1,20 @@
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 offset-md-3 table ">
+            <button class="btn btn-primary row-btn" (click)="getSelectedRows()">Get Selected Rows</button>
+            <ag-grid-angular 
+            #agGrid
+            [pagination]="pagination"
+            [paginationPageSize]="paginationPageSize"
+            style="width: 500px; height: 500px;"
+            class="ag-theme-alpine"
+            [rowData]="rowData"
+            [columnDefs]="columnDefs"
+            rowSelection="multiple"
+        >
+        </ag-grid-angular>
+        </div>
+    </div>
+</div>
